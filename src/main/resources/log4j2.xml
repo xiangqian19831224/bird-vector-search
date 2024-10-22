@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+
+    <Properties>
+        <Property name="BIRD_LOG_PATH">./logs</Property>
+        <Property name="APP_NAME">bird-vector-search</Property>
+        <Property name="BIRD_SYS_LOG_LEVEL">info</Property>
+        <Property name="BIRD_BIZ_LOG_LEVEL">debug</Property>
+    </Properties>
+
+    <Appenders>
+        <!-- console -->
+        <Console name="CONSOLE" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="%d{yyyy-MM-dd HH:mm:ss.SSS}  [X-TraceId:%X{X-TraceId}] [%t] %-5level %logger{36} %L %M - %msg%n"/>
+        </Console>
+
+        <!-- file for info level -->
+        <RollingFile name="INFO_FILE" fileName="${env:BIRD_LOG_PATH}/${env:APP_NAME}/${env:APP_NAME}-info.log"
+                     filePattern="${env:BIRD_LOG_PATH}/${env:APP_NAME}/back/${env:APP_NAME}-info_%d{yyyy-MM-dd}.gz">
+            <PatternLayout
+                    pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [X-TraceId:%X{X-TraceId}] [%t] %-5level %logger{36} - %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy modulate="true" interval="1"/>
+                <SizeBasedTriggeringPolicy size="100 MB"/>
+            </Policies>
+        </RollingFile>
+
+        <!-- file for error level -->
+        <RollingFile name="ERROR_FILE" fileName="${env:BIRD_LOG_PATH}/${env:APP_NAME}/${env:APP_NAME}-error.log"
+                     filePattern="${env:BIRD_LOG_PATH}/${env:APP_NAME}/back/${env:APP_NAME}-error_%d{yyyy-MM-dd}.gz">
+            <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout
+                    pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [X-TraceId:%X{X-TraceId}] [%t] %-5level %logger{36} - %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy modulate="true" interval="1"/>
+                <SizeBasedTriggeringPolicy size="100 MB"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Root level="${env:BIRD_SYS_LOG_LEVEL}">
+            <Appender-ref ref="CONSOLE"/>
+            <Appender-ref ref="INFO_FILE"/>
+            <Appender-ref ref="ERROR_FILE"/>
+        </Root>
+        <Logger name="com.bird" level="${env:BIRD_BIZ_LOG_LEVEL}"></Logger>
+        <Logger name="org.apache.hadoop.hive.ql.io.orc.ReaderImpl" level="error"></Logger>
+        <Logger name="org.apache.orc.impl.RecordReaderImpl" level="error"></Logger>
+        <Logger name="com.alibaba.nacos.common.remote.client" level="off"></Logger>
+        <Logger name="com.alibaba.nacos.common.remote.client.grpc.GrpcClient" level="off"></Logger>
+        <Logger name="com.alibaba.nacos.client.config.impl.ClientWorker" level="off"></Logger>
+    </Loggers>
+</Configuration>
