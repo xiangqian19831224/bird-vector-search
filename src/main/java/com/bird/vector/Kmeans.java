@@ -278,7 +278,7 @@ public class Kmeans {
      * 根据欧式距离，将数据归类到各个类中
      */
     private void dataClassification() {
-        printCenter(centers);
+//        printCenter(centers);
 
         vectors.parallelStream().forEach(vector -> {
             float[] dis = new float[clusterCount];
@@ -313,7 +313,6 @@ public class Kmeans {
      * 更新聚类中心
      */
     private void updateCenter() {
-        log.info("新的聚类中心是：");
         int centerCount = cluster.size();
         for (int i = 0; i < centerCount; i++) {
             float[] newCenter = new float[vectorDimension];

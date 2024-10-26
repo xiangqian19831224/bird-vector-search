@@ -1,5 +1,7 @@
 package com.bird.vector.utils;
 
+import java.io.File;
+
 /**
  * Created with IntelliJ IDEA.
  *
@@ -25,5 +27,11 @@ public class FolderTools {
         return dirPath;
     }
 
+    public static void createFolder(String folder) {
+        File file = new File(folder);
+        if (!file.exists()) {
+            file.mkdirs();
+        }
+    }
 
 }

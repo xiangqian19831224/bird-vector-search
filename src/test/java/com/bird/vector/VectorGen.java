@@ -30,7 +30,7 @@ public class VectorGen {
 
         int curCount = 0;
         int centerCount = 16;
-        int vecCountPerCenter = 1000;
+        int vecCountPerCenter = 10000;
         int vecDim = 1024;
         try (FileWriter fw = new FileWriter(filePath, true);
              BufferedWriter bw = new BufferedWriter(fw)

@@ -4,15 +4,6 @@
     <facet type="Spring" name="Spring">
       <configuration />
     </facet>
-    <facet type="web" name="Web">
-      <configuration>
-        <webroots />
-        <sourceRoots>
-          <root url="file://$MODULE_DIR$/src/main/java" />
-          <root url="file://$MODULE_DIR$/src/main/resources" />
-        </sourceRoots>
-      </configuration>
-    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
@@ -25,6 +16,43 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.bytedeco:onnxruntime-platform:1.16.3-1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:dnnl-platform:3.3.4-1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:opencl-platform:3.0-1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:opencl:3.0-1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:opencl:linux-arm64:3.0-1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:opencl:linux-x86_64:3.0-1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:opencl:macosx-x86_64:3.0-1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:opencl:windows-x86_64:3.0-1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:javacpp-platform:1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:javacpp:android-arm64:1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:javacpp:android-x86_64:1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:javacpp:ios-arm64:1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:javacpp:ios-x86_64:1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:javacpp:linux-arm64:1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:javacpp:linux-ppc64le:1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:javacpp:linux-x86_64:1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:javacpp:macosx-arm64:1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:javacpp:macosx-x86_64:1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:javacpp:windows-x86_64:1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:dnnl:3.3.4-1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:dnnl:linux-arm64:3.3.4-1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:dnnl:linux-x86_64:3.3.4-1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:dnnl:macosx-x86_64:3.3.4-1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:dnnl:windows-x86_64:3.3.4-1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:onnxruntime:1.16.3-1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:javacpp:1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:onnxruntime:linux-arm64:1.16.3-1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:onnxruntime:linux-x86_64:1.16.3-1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:onnxruntime:macosx-x86_64:1.16.3-1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:onnxruntime:windows-x86_64:1.16.3-1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: ai.djl.huggingface:tokenizers:0.30.0" level="project" />
+    <orderEntry type="library" name="Maven: ai.djl:api:0.30.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.5" level="project" />
+    <orderEntry type="library" name="Maven: net.java.dev.jna:jna:4.5.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-compress:1.27.1" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.11" level="project" />
+    <orderEntry type="library" name="Maven: commons-io:commons-io:2.16.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.18.10" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.32" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.2.3" level="project" />

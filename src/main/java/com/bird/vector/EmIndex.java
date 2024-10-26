@@ -213,6 +213,9 @@ public class EmIndex {
      * @param indexPrefix 索引前缀（分片，nas盘存储等进行区分用）
      */
     public void store(String indexDir, String indexPrefix) {
+        indexDir = FolderTools.folderAppendSlash(indexDir);
+        FolderTools.createFolder(indexDir);
+
         storeBitmapIndex(indexDir, indexPrefix);
         storeVectors(indexDir, indexPrefix);
     }

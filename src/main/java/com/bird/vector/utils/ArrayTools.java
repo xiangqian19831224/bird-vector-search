@@ -1,5 +1,7 @@
 package com.bird.vector.utils;
 
+import java.util.Arrays;
+
 /**
  * Created with IntelliJ IDEA.
  *

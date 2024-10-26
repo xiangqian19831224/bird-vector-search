@@ -116,7 +116,7 @@ public class EmPQ {
      */
     public void store(String modelDir) {
         modelDir = FolderTools.folderAppendSlash(modelDir);
-        createFolder(modelDir);
+        FolderTools.createFolder(modelDir);
 
         String centerPath = modelDir + MODEL_CENTERS;
         deleteFile(centerPath);
@@ -301,13 +301,6 @@ public class EmPQ {
         return centers;
     }
 
-
-    private void createFolder(String folder) {
-        File file = new File(folder);
-        if (!file.exists()) {
-            file.mkdirs();
-        }
-    }
 
     /**
      * 删除指定文件

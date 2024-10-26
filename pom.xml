@@ -17,6 +17,20 @@
     <description>Demo project for Spring Boot</description>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.bytedeco/onnxruntime-platform -->
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>onnxruntime-platform</artifactId>
+            <version>1.16.3-1.5.10</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/ai.djl.huggingface/tokenizers -->
+        <dependency>
+            <groupId>ai.djl.huggingface</groupId>
+            <artifactId>tokenizers</artifactId>
+            <version>0.30.0</version>
+        </dependency>
+
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
