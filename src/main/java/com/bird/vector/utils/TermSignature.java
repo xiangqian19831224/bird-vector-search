@@ -2,9 +2,10 @@ package com.bird.vector.utils;
 
 
 import com.google.common.hash.Hashing;
-import java.nio.charset.StandardCharsets;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.nio.charset.StandardCharsets;
 
 public class TermSignature {
     private static final Logger log = LoggerFactory.getLogger(TermSignature.class);
