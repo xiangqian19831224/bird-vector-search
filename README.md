@@ -27,3 +27,6 @@
 #  使用案例
     参考Test，代码比较简洁，可以工程中直接运行；
     如果有疑问可以联系。
+#  向量化模型下载
+    链接：https://pan.baidu.com/s/1j_kyUnjWnh7fiM67cTyH4w?pwd=1234 
+    提取码：1234
