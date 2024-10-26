@@ -26,4 +26,8 @@
     6. VectorSearch是一个完整的向量检索
 #  使用案例
     VectorSearchTest 是一个比较完善的检索案例，简单向量检索参考这个文件足以
-    如果需要bge-base-zh-v1.5模型请添加微信（后续会上传到云盘）
+    
+# 模型下载
+    参考docs/代码结构.jpg进行配置
+    链接：https://pan.baidu.com/s/1-6yMEneiOUmdaqN0IpzD1w?pwd=1234 
+    提取码：1234
